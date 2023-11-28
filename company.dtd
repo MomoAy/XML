@@ -1,0 +1,17 @@
+<!ELEMENT Company (Address,Division)>
+<!ELEMENT Address (Name,Street,City,State,Zip)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT Street (#PCDATA)>
+    <!ELEMENT City (#PCDATA)>
+    <!ELEMENT State (#PCDATA)>
+    <!ELEMENT Zip (#PCDATA)>
+<!ELEMENT Division (Division-Name,Location,Person+)>
+    <!ELEMENT Division-Name (#PCDATA)>
+    <!ELEMENT Location (#PCDATA)>
+    <!ELEMENT Person (First,Last,PhoneExt,EMail)>
+        <!ATTLIST Person Manager CDATA #REQUIRED
+                        Degree CDATA #REQUIRED>
+            <!ELEMENT First (#PCDATA)>
+            <!ELEMENT Last (#PCDATA)>
+            <!ELEMENT PhoneExt (#PCDATA)>
+            <!ELEMENT EMail (#PCDATA)>

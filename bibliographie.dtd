@@ -1,0 +1,11 @@
+<!ELEMENT bibliographie (livres+,articles+)>
+<!ELEMENT livres (titre,auteur+,tome+,edition)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT auteur (nom)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT tome (#PCDATA)>
+<!ATTLIST tome nbpages CDATA #REQUIRED>
+<!ELEMENT edition (#PCDATA)>
+<!ATTLIST edition nom CDATA #REQUIRED
+                  lieu CDATA #REQUIRED
+                  >

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE livre2 SYSTEM "livre2.dtd">
+<livre2 id="561" nbpages="190" titre="La compagnie des spectres"> 
+    <auteur>
+        <nom>Salvayre</nom>
+        <prenom>Lydie</prenom>
+    </auteur>
+    <format type="poche">
+        <mesure type="largeur" unite="cm">11</mesure> 
+        <mesure type="longueur" unite="cm">19</mesure> 
+        <mesure type="hauteur" unite="mm">10</mesure>
+    </format> 
+</livre2>

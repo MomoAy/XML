@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="company.xsd">  -->
+<!DOCTYPE company SYSTEM "company.dtd">
+    <Address>
+        <Name>Main office</Name> 
+        <Street>Grosvenor Bvld.</Street> 
+        <City>Los Angeles</City> 
+        <State>California</State> 
+        <Zip>3141</Zip> 
+    </Address> 
+   <Division> 
+    <Division-Name>Sales</Division-Name> 
+    <Location>Washington</Location> 
+    <Person Manager="true" Degree="MA"> 
+        <First>Allison</First> 
+        <Last>Andersen</Last> 
+        <PhoneExt>111</PhoneExt> 
+        <EMail>Andersen@work.com</EMail> 
+    </Person> 
+    <Person Manager="false" Degree="BA"> 
+        <First>Bruce</First> 
+        <Last>Burrwinkle</Last> 
+        <PhoneExt>222</PhoneExt> 
+        <EMail>Burrwinkle@work.com</EMail> 
+    </Person> 
+   </Division> 
+</Company>

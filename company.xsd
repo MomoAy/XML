@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Company">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Address">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Name" type="xs:string" />
+                            <xs:element name="Street" type="xs:string" />
+                            <xs:element name="City" type="xs:string" />
+                            <xs:element name="State" type="xs:string" />
+                            <xs:element name="Zip" type="xs:integer" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Division" maxOccurs="2">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Division-Name" type="xs:string" />
+                            <xs:element name="Location" type="xs:string" />
+                            <xs:element name="Person" type="personne" maxOccurs="2" />
+                        </xs:sequence>
+                    </xs:complexType>   
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="personne">
+        <xs:sequence>
+            <xs:element name="First" type="xs:string" />
+            <xs:element name="Last" type="xs:string" />
+            <xs:element name="PhoneExt" type="xs:integer" />
+            <xs:element name="EMail" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="Degree">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="BA" />
+                    <xs:enumeration value="MA" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="Manager">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="true" />
+                    <xs:enumeration value="false" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+</xs:schema>

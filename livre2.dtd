@@ -1,0 +1,12 @@
+<!ELEMENT livre2 (auteur,format)>
+<!ATTLIST livre2 id CDATA #REQUIRED
+                 nbpages CDATA #REQUIRED
+                 titre CDATA #REQUIRED>
+<!ELEMENT auteur (nom,prenom)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT format (mesure+)>
+<!ATTLIST format type CDATA #REQUIRED>
+<!ELEMENT mesure (#PCDATA)>
+<!ATTLIST mesure type CDATA #REQUIRED
+                 unite CDATA #REQUIRED>
